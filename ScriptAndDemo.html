@@ -1,0 +1,49 @@
+<script>
+   //FAQ Drop Down Script - By Bryce P.
+   $(document).ready(function(){
+       $(".question").click(function(){
+           $(".active-faq").slideUp(200); //Slide up the old active faq
+
+           var relatedQuestion = $(event.target).closest(".question");
+           var relatedAnswer = relatedQuestion.siblings(".answer");
+
+
+           if(relatedAnswer.hasClass("active-faq")){ //So that way if the answer was already open and clicked, it will close and not open again
+               relatedAnswer.removeClass("active-faq");
+               relatedQuestion.find("span").removeClass("fa-chevron-up");
+               relatedQuestion.find("span").addClass("fa-chevron-down");
+
+
+           }else{ // a different answer was clicked
+               var oldRelatedQuestion = $(".active-faq").siblings(".question");
+               oldRelatedQuestion.find("span").removeClass("fa-chevron-up");
+               oldRelatedQuestion.find("span").addClass("fa-chevron-down");
+               $(".active-faq").removeClass("active-faq");
+
+
+
+               relatedAnswer.addClass("active-faq");
+               relatedQuestion.find("span").removeClass("fa-chevron-down");
+               relatedQuestion.find("span").addClass("fa-chevron-up");
+               $(".active-faq").slideDown(200);
+           }
+       });
+   });
+
+  </script>
+  <div class="faq">
+    <div class="question">
+      <h4>How do I apply for board? <span class="fa fa-chevron-down"></span></h4>
+    </div>
+    <div class="answer">
+      <p>Answer</p>
+    </div>
+  </div>
+  <div class="faq">
+    <div class="question">
+      <h4>How do I apply to be in the Worldfest Fashion Show? <span class="fa fa-chevron-down"></span></h4>
+    </div>
+    <div class="answer">
+      <p>Answer</p>
+    </div>
+  </div>
