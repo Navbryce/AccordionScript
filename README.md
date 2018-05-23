@@ -5,10 +5,10 @@ A small script to create an accordion effect. It's useful for FAQ sections and o
 - Jquery
 - Font awesome (the snippet can be easily manipulated to remove this dependency)
 
-# Use 
+# Installationa nd Use
 Put the JavaScript snippet somewhere on your website or in its own independent JavaScript file and link it to the page.
 
-**Follow the format with as many Divs/Sections as needed**:
+Follow the format with as many Divs/Sections as needed:
 ```
   <div class="faq">
     <div class="question">
@@ -19,3 +19,4 @@ Put the JavaScript snippet somewhere on your website or in its own independent J
     </div>
   </div>
 ```
+Note: Do not change the classes parent/child hierarchy
