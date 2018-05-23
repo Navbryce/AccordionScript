@@ -5,7 +5,7 @@ A small script to create an accordion effect. It's useful for FAQ sections and o
 - Jquery
 - Font awesome (the snippet can be easily manipulated to remove this dependency)
 
-# Installationa nd Use
+# Installation and Use
 Put the JavaScript snippet somewhere on your website or in its own independent JavaScript file and link it to the page.
 
 Follow the format with as many Divs/Sections as needed:
