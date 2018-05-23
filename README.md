@@ -19,4 +19,4 @@ Follow the format with as many Divs/Sections as needed:
     </div>
   </div>
 ```
-Note: Do not change the classes parent/child hierarchy
+*Note*: Do not change the classes parent/child hierarchy
